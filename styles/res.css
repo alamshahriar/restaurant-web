@@ -1,0 +1,32 @@
+/* Google Baskervville font */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
+
+/* Google  DM Sans*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap');
+
+
+/* shared style */
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.font-dm {
+    font-family: "DM Sans", sans-serif;
+}
+
+.font-baskervville {
+    font-family: "Baskervville", serif;
+}
+
+/* 
+.icon {
+    background-image: url('../img/pic.png');
+    width: 50%;
+    padding-top: 358px;
+    background-repeat: no-repeat;
+} */
+.item {
+    margin-top: -65px;
+    padding-top: 224px;
+}
