@@ -14,10 +14,24 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/88317e93d9.js" crossorigin="anonymous"></script>
+
+    <!-- custom link -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        mycolor: 'rgba(51,51,51,.49)',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
-    <header class="bg-[#2B3A41]">
+    <header class="bg-[#2B3A41] hidden">
         <nav>
             <div class="container">
                 <div class="flex justify-between items-center pt-4 pb-40">
@@ -30,7 +44,8 @@
                             <li><a href="">Contact</a></li>
                         </ul>
                     </div>
-                    <button class="py-4 px-7 border-2 border-[#FFFFF] text-white">Appointment</button>
+                    <button
+                        class="py-4 px-7 border-2 border-[#FFFFF] text-white hidden lg:flex hover:bg-[#ECBB9C] hover:text-black">Appointment</button>
                 </div>
             </div>
         </nav>
@@ -55,18 +70,20 @@
     <main class="-mb-34">
         <section class="">
             <div class="container">
-                <div class="item flex justify-center items-center
-                gap-32 bg-[#FFFFFF] ">
+                <div class="item flex flex-col lg:flex-row justify-center items-center gap-12
+                lg:gap-32 bg-[#FFFFFF] mx-6">
                     <div>
-                        <img src="img/Group 1.png" alt="">
+                        <img src="img/Group 1.png" alt="" class="w-full">
                     </div>
                     <div>
                         <h3 class="border-l-2 border-[#333333] pl-7 font-dm text-[#333333] font-normal uppercase">About
                         </h3>
-                        <h1 class="max-w-[520px] text-6xl text-[#333333] font-normal pt-10 pb-10">Making The
+                        <h1
+                            class="max-w-[520px] text-4xl lg:text-6xl text-[#333333] font-normal pt-8 pb-8 lg:pt-10 lg:pb-10">
+                            Making The
                             Delicious Food
                         </h1>
-                        <p class="text-[##3333337D] max-w-md pb-7">Separated they live in Bookmarksgrove right at the
+                        <p class="text-[#3333337D] max-w-md pb-7">Separated they live in Bookmarksgrove right at the
                             coast
                             of the
                             Semantics, a large
@@ -74,6 +91,98 @@
                             Separated they live in Bookmarksgrove right at the coast.</p>
                         <button class="bg-[#567482] text-white py-3 px-9">About us</button>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-36 lg:py-48">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-2 h-96">
+                    <div class="bg-[#2B3A41] flex justify-center items-center h-[254px] lg:h-[384px]">
+                        <div>
+                            <h3 class="border-l-2 border-[#FFFFFF] pl-7 font-dm text-[#FFFFFF] font-normal uppercase">
+                                Appointment
+                            </h3>
+                            <h1 class="
+                        font-baskervville text-4xl lg:text-6xl font-normal text-[#FFF] pt-8 pb-8">Reservation
+                            </h1>
+                            <button class="text-white py-4 px-9 border-2 border-[#FFFFFF4B]">Contact Us</button>
+                        </div>
+                    </div>
+                    <div class="bg-cover bg-center relative flex justify-center items-center h-[254px] lg:h-[384px]"
+                        style="background-image: url('img/Bitmap\ \(19\).png');">
+                        <div class="bg-white absolute max-w-xs h-52 lg:max-w-sm lg:h-56">
+                            <div class="py-5 px-6
+                             lg:py-10 lg:px-14">
+                                <h1 class="font-dm text-2xl font-bold pb-14">+1 (234) 567-89-02</h1>
+                                <h5 class="font-dm text-sm text-[#3333337D]">Opening Hours</h5>
+                                <p class="font-dm text-base text-[#333333]">9:00am – 10:00pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-32 lg:py-40 mx-6">
+            <div class="container">
+                <h3 class="border-l-2 border-[#333333] pl-7 font-dm text-[#333333] font-normal uppercase">features</h3>
+                <h1 class="font-baskervvill text-4xl lg:text-6xl text-[#333333] max-w-lg pt-8 pb-16">First-Class Dining
+                    Experience</h1>
+                <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-8">
+                    <div class="">
+                        <figure>
+                            <img src="img/Group 4.png" alt="Shoes" />
+                        </figure>
+                        <div class="">
+                            <h2 class="card-title font-dm text-[#333333] text-2xl font-bold pt-6 pb-5">Fresh Ingredients
+                            </h2>
+                            <p class="font-dm text-[#3333337D] max-w-80 pb-12">The copy warned the Little Blind Text,
+                                that
+                                where
+                                it came
+                                from it
+                                would have been
+                                rewritten a
+                                thousand times.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <figure>
+                            <img src="img/Group 3.png" alt="Shoes" />
+                        </figure>
+                        <div class="">
+                            <h2 class="card-title font-dm text-[#333333] text-2xl font-bold pt-6 pb-5">Fast Service</h2>
+                            <p class="font-dm text-[#3333337D] max-w-80 pb-12">Copy warned the Little Blind Text, that
+                                where
+                                it came from it would have been rewritten a thousand times.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <figure>
+                            <img src="img/Group 5.png" alt="Shoes" />
+                        </figure>
+                        <div class="">
+                            <h2 class="card-title font-dm text-[#333333] text-2xl font-bold pt-6 pb-5 pb-12">Hand Made
+                            </h2>
+                            <p class="font-dm text-[#3333337D] max-w-80">Warned the Little Blind Text, that where it
+                                came from it would have been rewritten a thousand times.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h3 class="border-l-2 border-[#333333] pl-7 font-dm text-[#333333] font-normal uppercase">Menu</h3>
+                <h1 class="font-baskervvill text-4xl lg:text-6xl text-[#333333] max-w-lg pt-8 pb-16">Our Delightful
+                    Menu Offers</h1>
+
+                <div>
+                    <ul>
+                        <li><a class="font-dm text-2xl " href="">Meat</a></li>
+                        <li><a class="font-dm text-2xl" href="">Fish</a></li>
+                        <li><a class="font-dm text-2xl" href="">Bakery</a></li>
+                        <li><a class="font-dm text-2xl" href="">Drinks</a></li>
+                    </ul>
                 </div>
             </div>
         </section>
